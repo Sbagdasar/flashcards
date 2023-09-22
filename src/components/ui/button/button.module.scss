@@ -1,24 +1,147 @@
 .primary {
   all: unset;
-  background-color: red;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 6px 28px;
+
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-m);
+  color: var(--color-light-100);
+
+  background-color: var(--color-accent-500);
+  border-radius: 4px;
+}
+
+.primary:active {
+  background-color: var(--color-accent-700);
+}
+
+.primary:hover {
+  background-color: var(--color-accent-300);
+}
+
+.primary:focus {
+  border: 2px solid var(--color-info-700);
+}
+
+.primary:disabled {
+  cursor: unset;
+  color: var(--color-light-900);
+  background-color: var(--color-accent-900);
 }
 
 .secondary {
   all: unset;
-  background-color: green;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 28px;
+
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-light-100);
+
+  background-color: var(--color-dark-300);
+  border-radius: 4px;
+}
+
+.secondary:active {
+  background-color: var(--color-dark-500);
+}
+
+.secondary:hover {
+  background-color: var(--color-dark-100);
+}
+
+.secondary:focus {
+  border: 2px solid var(--color-info-700);
+}
+
+.secondary:disabled {
+  cursor: unset;
+  color: var(--color-light-900);
+  background-color: var(--color-dark-300);
 }
 
 .tertiary {
   all: unset;
-  background-color: blue;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 28px;
+
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-500);
+
+  border: 1px solid var(--color-accent-500);
+  border-radius: 4px;
+}
+
+.tertiary:active {
+  background-color: var(--color-accent-900);
+}
+
+.tertiary:hover {
+  background-color: var(--color-dark-500);
+}
+
+.tertiary:focus {
+  border: 2px solid var(--color-info-700);
+}
+
+.tertiary:disabled {
+  cursor: unset;
+  color: var(--color-accent-900);
+  background-color: unset;
 }
 
 .link {
   all: unset;
-  background-color: yellow;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 0;
+
+  color: var(--color-accent-500);
+}
+
+.link:active {
+  color: var(--color-accent-700);
+}
+
+.link:hover {
+  color: var(--color-accent-300);
+}
+
+.link:focus {
+  padding: 6px 12px;
+  border: 2px solid var(--color-info-700);
+  border-radius: 130px;
+}
+
+.link:disabled {
+  cursor: unset;
+  color: var(--color-accent-900);
+  background-color: unset;
 }
 
 .fullWidth {
-  all: unset;
+  justify-content: center;
   width: 100%;
 }
